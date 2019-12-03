@@ -116,7 +116,7 @@ class Home extends Component {
           style={{textAlign: 'center'}}
           >
           <h3 class='card-title'>
-            Select a document and have it certified in the Bitcoin blockchain<br />
+            Select a document and have it certified on Title Network<br />
             Only {docproofPrice.amount} {docproofPrice.code}
           </h3>
           <div className='card col-lg-8 no-border' style={{margin: 0}}>
