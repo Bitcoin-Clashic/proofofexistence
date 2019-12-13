@@ -7,7 +7,7 @@ const Confirming = ({
   <div class='card-body'>
     <span class='badge badge-light'>Confirming</span>
     <p class='card-text'>
-      A transaction embedding your document's digest has been broadcast to the Bitcoin network. Click the button below after the transaction is confirmed to complete the process.
+      A transaction embedding your document's digest has been broadcast to the Title Network. Click the button below after the transaction is confirmed to complete the process.
     </p>
     <ul class='list-group list-group-flush'>
       <li class='list-group-item'>
@@ -17,10 +17,9 @@ const Confirming = ({
       {/* NOTE: Only support btc mainnet */}
       <li class='list-group-item'>
         <span class='badge badge-light'>Transaction Detail: </span>
-        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://insight.bitpay.com/tx/${tx}`}>insight</a>
-        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://www.smartbit.com.au/tx/${tx}`}>smartbit</a>
-        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://www.blockchain.com/btc/tx/${tx}`}>BLOCKCHAIN</a>
-        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://live.blockcypher.com/btc/tx/${tx}`}>BLOCKCYPHER</a>
+        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://insight.title.network/tx/${tx}`}>Tnet Insight</a>
+        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://explorer.title.network/tx/${tx}`}>RPC Explorer</a>
+        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`http://tnet-node.wattup.eu/tx/${tx}`}>WattUp RPC</a>
         <br />
       </li>
     </ul>
