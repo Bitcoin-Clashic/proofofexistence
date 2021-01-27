@@ -7,7 +7,7 @@ const Confirming = ({
   <div class='card-body'>
     <span class='badge badge-light'>Confirming</span>
     <p class='card-text'>
-      A transaction embedding your document's digest has been broadcast to the Title Network. Click the button below after the transaction is confirmed to complete the process.
+      A transaction embedding your document's digest has been broadcast to the Bitcoin Clashic. Click the button below after the transaction is confirmed to complete the process.
     </p>
     <ul class='list-group list-group-flush'>
       <li class='list-group-item'>
@@ -17,9 +17,8 @@ const Confirming = ({
       {/* NOTE: Only support btc mainnet */}
       <li class='list-group-item'>
         <span class='badge badge-light'>Transaction Detail: </span>
-        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://insight.title.network/tx/${tx}`}>Tnet Insight</a>
-        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://explorer.title.network/tx/${tx}`}>RPC Explorer</a>
-        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`http://tnet-node.wattup.eu/tx/${tx}`}>WattUp RPC</a>
+        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://insight.clashic.cash/tx/${tx}`}>Insight</a>
+        <a class='btn btn-primary' target='_blank' style={{ marginLeft: '.8em' }} href={`https://explorer.clashic.cash/tx/${tx}`}>RPC Explorer</a>
         <br />
       </li>
     </ul>

@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 
 const env = process.env.NODE_ENV || 'development'
 if (env === 'development') app.use(logger('dev'))
+app.use(logger('dev'))
 
 // callback triggers to route parameters
 app.param('magicNumber', (req, res, next, magicNumber) => {

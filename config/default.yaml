@@ -1,12 +1,12 @@
 app:
   port: 3003
   site:
-    brand: Proof of Existence
+    brand: Proof of Existence on Bitcoin Clashic
     logo: "/theme/logo.svg"
-    title: Proof of Existence
+    title: Proof of Existence TNET/BCHC
     slogan: Written forever.
     tagline: Instant & Secure Proof of Existence for Any Document.
-    email: love@proofofexistence.com
+    email: bitcoin@clashic.cash
     keywords:
       - blockchain
       - notary
@@ -24,31 +24,33 @@ app:
     scheme: http
     host: localhost
     port: 3003
-  magicNumber: magic12345
-  defaultChain: btc
-  defaultNetwork: testnet
+  magicNumber: 0x12b2dcf0
+  defaultChain: bchc
+  defaultNetwork: mainnet
 
 social:
-  twitter: proofxstence
-  telegram: EEP3LAyL8WvklWGsQ29F4g
-  github: proofofexistence
+  twitter: BitcoinClashic
+  telegram: TitleNetwork
+  github: Bitcoin-Clashic
 
 services:
   insight:
-    btc:
+    bchc:
       mainnet:
-        url: https://insight.bitpay.com
+        url: https://insight.clashic.cash
         api: /api
-      testnet:
-        url: https://test-insight.bitpay.com
-        api: /api
-    bch:
+
+db:
+  path: /var/lib/poe_db/poex-database
+
+chains:
+  bchc:
+    networks:
       mainnet:
-        url:
-        api: /api
-      testnet:
-        url:
-        api: /api
+        incomingPrivateKey: 
+        outgoingPublicKey: 
+        documentPrice: 200000
+        feeMultiplier: 4
 
 mail:
   from: proofx@localhost

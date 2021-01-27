@@ -48,7 +48,7 @@ const config = {
   },
 
   module : {
-    loaders : [
+    rules : [
       {
         test: /\.(jpe?g|png|gif)$/i,   //to support eg. background-image property
         loader:"file-loader",

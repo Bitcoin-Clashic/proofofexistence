@@ -77,8 +77,8 @@ class Status extends Component {
       price
     } = data
 
-    const BTCPrice = btcConvert(price, 'Satoshi', 'TNET')
-    const mBTCPrice = btcConvert(price, 'Satoshi', 'mTNET')
+    const BTCPrice = btcConvert(price, 'Satoshi', 'BCHC')
+    const mBTCPrice = btcConvert(price, 'Satoshi', 'mBCHC')
 
     this.setState({
       BTCPrice,
@@ -97,8 +97,8 @@ class Status extends Component {
       blockstamp
     } = data
 
-    const BTCPrice = btcConvert(price, 'Satoshi', 'TNET')
-    const mBTCPrice = btcConvert(price, 'Satoshi', 'mTNET')
+    const BTCPrice = btcConvert(price, 'Satoshi', 'BCHC')
+    const mBTCPrice = btcConvert(price, 'Satoshi', 'mBCHC')
 
     this.setState({
       paymentAddress: payment_address,
@@ -120,8 +120,8 @@ class Status extends Component {
             price
           } = statusResp.data
 
-            const BTCPrice = btcConvert(price, 'Satoshi', 'TNET')
-            const mBTCPrice = btcConvert(price, 'Satoshi', 'mTNET')
+            const BTCPrice = btcConvert(price, 'Satoshi', 'BCHC')
+            const mBTCPrice = btcConvert(price, 'Satoshi', 'mBCHC')
 
             this.setState({
               BTCPrice,

@@ -11,7 +11,7 @@ const Payment = ({
     <span class='badge badge-info'>Payment Required</span>
 
     <p class='card-text'>
-      Please send <strong>{mBTCPrice} mTNET</strong> to
+      Please send <strong>{mBTCPrice} mBCHC</strong> to
     </p>
     <p>
       <strong id='payment_link'>
